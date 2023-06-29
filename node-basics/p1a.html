@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Sum {
+            constructor(x,y) {
+                this.inp1 = x;
+                this.inp2 = y;
+            }
+
+            calculate() {
+                return this.inp1 + this.inp2
+            }
+        }
+
+        class Cal extends Sum {
+            constructor(a,b) {
+                super(a,b)
+            }
+        }
+
+        let in1 = new Cal(12,14)
+        
+        console.log('output =', in1.calculate())
+    </script>
+</body>
+</html>
